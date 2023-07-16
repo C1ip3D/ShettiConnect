@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Share+Tech+Mono&family=VT323&family=Ysabeau+SC:wght@300&display=swap');
+
+@keyframes dropDownContent {
+  0% {
+    transform: translateY(-200%);
+    filter: blur(5px);
+  }
+  100% {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+
+:root {
+  --mainBlue: rgb(8, 144, 217);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Share Tech Mono';
+  text-align: center;
+  border: 0;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: var(--mainBlue);
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.main {
+  background-image: url('/system/media/mainBackground.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
+}
+
+.main h1 {
+  margin-bottom: 30%;
+  font-size: 2.4rem;
+}
+
+.main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10%;
+  font-family: Pangolin;
+}
+
+.main button{
+  background-color: white;
+  font-family: Ysabeau SC;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.compete {
+  margin: 20px;
+}
+
+.compete h2 {
+  padding: 20px;
+  font-size: 1.9rem;
+  text-decoration: underline;
+}
+
+table {
+  position: relative;
+  margin: 10px 40%;
+  border: 2px solid black;
+}
+
+th {
+  padding: 10px;
+}
+
+.register {
+  padding: 30px;
+  background-color: white;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  position: relative;
+  top: 10%;
+  background-color: white;
+  padding: 3%;
+}
+
+footer h3 {
+  padding: 15px;
+}
+
+.accDropContent {
+  display: none;
+  position: absolute;
+  transition: 20s linear;
+  right: 8%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px;
+  font-family: VT323;
+}
+
+img {
+  position: relative;
+  top: 15%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.accDropdown:hover .accDropContent {
+  display: grid;
+  animation: dropDownContent 1s ease-in-out;
+}
+
+#signOut {
+  display: none;
+}

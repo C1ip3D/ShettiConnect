@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Share+Tech+Mono&family=VT323&family=Ysabeau+SC:wght@300&display=swap');
+
+:root {
+  --mainBlue: rgb(8, 144, 217);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Share Tech Mono';
+  text-align: center;
+  border: 0;
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  background-color: aliceblue;
+  background-image: url(/system/media/mainBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+form {
+  display: grid;
+  width: 50%;
+  background-color: wheat;
+  margin-left: 25%;
+  border-radius: 20px;
+  box-shadow: 5px 3px 4px black;
+  gap: 20px;
+  position: absolute;
+  top: 30%;
+  padding: 20px;
+  background-image: none;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 50%;
+  justify-self: center;
+  border-radius: 15px;
+  font-size: 20px;
+  background-image: none;
+  padding: 10px;
+  box-shadow: 1px 3px 1px black;
+}
+
+input[type='submit'] {
+  width: 50%;
+  justify-self: center;
+  font-size: 20px;
+  background-image: none;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  box-shadow: 1px 3px 1px black;
+  border: 2px solid black;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+form a{
+  font-size: 27px;
+}

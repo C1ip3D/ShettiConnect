@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Shetti Connect</title>
+    <link rel="stylesheet" href="/system/css/login.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Login</h1>
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Login" />
+        <a href="/dir/register.html">Don't have an account?</a>
+      </form>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="module" src="/system/lib/firebase.js"></script>
+    <script type="module" src="/system/lib/login.js"></script>
+  </body>
+</html>

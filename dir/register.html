@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Shetti Connect</title>
+    <link rel="stylesheet" href="/system/css/register.css" />
+  </head>
+  <body>
+    <div class="register">
+      <form>
+        <h2>Register</h2>
+        <div>
+          <input type="file" id="fileInput" accept=".jpg" name="file" />
+        </div>
+        <img src="/system/media/guest.jpg" alt="Profile Picture" id="pfpIMG" />
+        <label for="fileInput" id="fileLabel">
+          <h1>Choose a file</h1>
+        </label>
+
+        <input type="text" name="name" id="name" placeholder="Name" required />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+
+        <input type="submit" value="Register" />
+        <a href="/dir/login.html">Already have an account?</a>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="module" src="/system/lib/firebase.js"></script>
+    <script type="module" src="/system/lib/register.js"></script>
+  </body>
+</html>
