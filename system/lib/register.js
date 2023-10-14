@@ -31,7 +31,7 @@ auth.onAuthStateChanged((user) => {
   if (user) {
     setTimeout(() => {
       window.location.href = '../index.html';
-    }, 10000)
+    }, 10000);
   } else {
   }
 });
@@ -43,8 +43,10 @@ form.addEventListener('submit', (e) => {
   const password = document.getElementById('password');
   const confirmPassword = document.getElementById('confirmPassword');
   const fileInput = document.getElementById('fileInput');
-  if (password.value != confirmPassword.value || fileInput.files.length === 0) {
-    alert('Passwords do not match or no file selected');
+  if (password.value != confirmPassword.value) {
+    alert('Passwords do not match');
+  } else if (fileInput.files.length === 0) {
+    alert('Please upload a profile picture');
   } else {
     auth
       .createUserWithEmailAndPassword(
@@ -58,7 +60,7 @@ form.addEventListener('submit', (e) => {
         storageRef
           .put(fileInput.files[0])
           .then((snapshot) => {
-            alert('Uploaded');
+            alert('Registered Successfully');
             storageRef.getDownloadURL().then((url) => {
               auth.currentUser
                 .updateProfile({
@@ -66,23 +68,17 @@ form.addEventListener('submit', (e) => {
                 })
                 .then(() => {
                   console.log('Profile Updated');
-                  console.log(creds.user.uid);
-                  console.log(creds.user.photoURL);
                   auth.currentUser
                     .updateProfile({
                       displayName: name.value,
                     })
-                    .then(() => {
-                      console.log('Profile Updated');
-                      console.log(creds.user.uid); 
-                      console.log(creds.user.displayName);
-                    })
-                    .error((error) => {
+                    .then(() => {})
+                    .catch((error) => {
                       console.error(error);
                       alert(error.message);
                     });
                 })
-                .error((error) => {
+                .catch((error) => {
                   console.error(error);
                   alert(error.message);
                 });

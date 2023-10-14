@@ -91,7 +91,9 @@ button {
 
 table {
   position: relative;
-  margin: 10px 40%;
+  margin: 10px 32%;
+  font-size: 20px;
+  padding: 8px;
   border: 2px solid black;
 }
 

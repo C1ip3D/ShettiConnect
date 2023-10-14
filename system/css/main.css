@@ -14,15 +14,16 @@
 }
 
 #chatContainer {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
 }
 
 #chatMessages {
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
+  margin-top: 2%;
   padding: 10px;
   overflow-y: scroll;
   box-shadow: 4px 4px 9px black;
@@ -43,86 +44,13 @@
   font-size: 20px;
 }
 
-.selection {
-  display: grid;
-  width: 25%;
-  position: relative;
-  left: 35%;
-  margin-top: 15%;
-  gap: 5px;
-}
-
-h1 {
+#welcome {
   position: absolute;
   top: 5%;
   left: 40%;
 }
 
-.selection button {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.selection h2 {
-  margin: 20px;
-  font-size: 2rem;
-}
-
-.selection h6 {
-  font-size: 25px;
-}
-
-.selection input[type='number'] {
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.selection input[type='submit']{
-  font-size: 33px;
-}
-
-input[type='text']{
+input[type='text'] {
   font-size: 20px;
 }
 
-#Join {
-  margin: 20px;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-
-#settingIcon {
-  position: absolute;
-  height: 55px;
-  width: 55px;
-  top: 20px;
-  background-color: transparent;
-  left: 90%;
-}
-
-.settings {
-  background-color: black;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  left: 22%;
-  z-index: 99999999999;
-  display: none;
-}
-
-#backgroundUploader {
-  display: none;
-}
-
-#backgroundLabel {
-  position: relative;
-  top: 20px;
-  right: 10%;
-  width: 100%;
-}
-
-#backgroundLabel h1 {
-  font-size: 1rem;
-  color: rgb(0, 0, 0);
-  padding: 20px;
-}

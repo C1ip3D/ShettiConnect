@@ -7,26 +7,11 @@
     <link rel="stylesheet" href="/system/css/main.css" />
   </head>
   <body>
-    <h1>placeholder</h1>
-    <img src="/system/media/settings.png" alt="Settings" id="settingIcon"/>
-    <div class="settings">
-      <input type="file" id="backgroundUploader" />
-      <label for="backgroundUploader" id="backgroundLabel">
-        <h1>Choose Background Image</h1>
-      </label>
-    </div>
-    <div class="selection">
-      <button>Create A New Chat Room</button>
-      <h6>or</h6>
-      <h2>Join An Exisiting One</h2>
-      <input type="number" placeholder="ChatID" id="chatInput"/>
-      <input type="submit" id="chatSubmit" value="Join" />
-    </div>
+    <h1 id="welcome">Welcome,</h1>
     <div id="chatContainer">
       <div id="chatMessages"></div>
       <input type="text" id="messageInput" placeholder="Type your message" />
       <button id="sendButton">Send</button>
-      <button id="Join">Join Another Room</button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
@@ -34,3 +19,5 @@
     <script type="module" src="/system/lib/main.js"></script>
   </body>
 </html>
+
+

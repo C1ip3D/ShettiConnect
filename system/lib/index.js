@@ -46,11 +46,8 @@ auth.onAuthStateChanged((user) => {
 	  accDropContent.style.top = '80%';
     accDropContent.style.right = '10%';
     let img = document.getElementById('pfp');
-    img.src = user.photoURL;
-    console.log(user);
-    console.log(user.uid);
     console.log(user.photoURL);
-    console.log(user.displayName);
+    img.src = user.photoURL;
   } else {
     settingsBTN.style.display = 'none';
     registerBTN.style.display = 'block';
