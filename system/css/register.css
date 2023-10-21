@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Share+Tech+Mono&family=VT323&family=Ysabeau+SC:wght@300&display=swap');
+
+body {
+  background-image: url(/system/media/mainBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register {
+  background-color: transparent;
+  min-height: 100vh;
+}
+
+
+form {
+  display: grid;
+  margin: 20px;
+  gap: 20px;
+  box-shadow: 2px 7px 5px black;
+  width: 50%;
+  margin-left: 25%;
+  background-color: wheat;
+  border-radius: 3%;
+  text-align: center;
+  font-family: VT323;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 50%;
+  justify-self: center;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 1px 3px 1px black;
+  transition: 0.2s linear;
+  font-family: Ysabeau SC;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus{
+  border-radius: 0;
+}
+
+input[type='submit'] {
+  width: 50%;
+  justify-self: center;
+  font-size: 20px;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  box-shadow: 1px 3px 1px black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+form h2 {
+  padding: 30px 0;
+  font-size: 3rem;
+}
+
+a {
+  padding: 20px;
+  color: black;
+  font-size: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+input[type='file']{
+  display: none;
+}
+
+label {
+  padding: 20px;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#pfpIMG {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 37%;
+}

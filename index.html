@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shetti Connect</title>
+    <link rel="stylesheet" href="./system/css/index.css" />
+  </head>
+  <body>
+    <nav>
+      <button><a href="#main">Home</a></button>
+      <button><a href="#comp">Features</a></button>
+      <div class="accDropdown">
+        <img src="./system/media/guest.jpg" alt="placeholder" id="pfp" />
+        <div class="accDropContent">
+          <button id="register">Register</button>
+          <button id="login">Login</button>
+          <button id="settings">Settings</button>
+          <button id="signOut">Log Out</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main" id="main">
+        <h1>Shetti Connect</h1>
+        <h2>Connect to the web</h2>
+        <button id="connect">Connect</button>
+      </div>
+
+      <div class="compete" id="comp">
+        <h2>Why choose ShettiConnect</h2>
+        <p>
+          Shetti Connect is a dynamic online platform created by Avaneesh,
+          designed to foster global connections. This innovative platform offers
+          users from around the world the exciting opportunity to connect
+          randomly with one another, transcending geographical boundaries and
+          promoting meaningful interactions. Shetti Connect embraces the power
+          of the internet to bridge cultural and geographical gaps, enabling
+          users to engage with people they might not have otherwise encountered.
+          With its user-friendly interface and Avaneesh's vision for global
+          connectivity, Shetti Connect provides a unique space for individuals
+          to share experiences, perspectives, and ideas, making the world feel
+          more interconnected than ever before.
+        </p>
+      </div>
+
+      <footer>
+        <h3>&copy; 2023 Shetti Connect All Rights Reserved.</h3>
+        <button id="PP">Privacy Policy</button>
+        <button id="TOS">Terms of Service</button>
+      </footer>
+    </main>
+
+    <div class="settings">
+      <h1>My Account</h1>
+      <div class="alert">
+        <h1>⚠️Email Verification!⚠️</h1>
+        <h2>Verify your email <span id="emailVerify">here</span></h2>
+      </div>
+      <div class="content">
+        <div class="left">
+          <img src="/system/media/guest.jpg" alt="PFP" id="settingsPFP" />
+          <h2 id="displayName">DisplayNAME</h2>
+          <button class="edit" id="leftEDIT">Edit Picture</button>
+        </div>
+        <div class="right">
+          <div class="section">
+            <div class="info" id="top">
+              <h3 class="header">DISPLAY NAME</h3>
+              <h2 id="displayName1">Display name</h2>
+            </div>
+            <button class="edit" id="topEDIT">EDIT</button>
+          </div>
+          <div class="section">
+            <div class="info" id="middle">
+              <h3 class="header">Password</h3>
+              <h2 id="username">Username</h2>
+            </div>
+            <button class="edit" id="middleEDIT">EDIT</button>
+          </div>
+          <div class="section">
+            <div class="info" id="bottom">
+              <h3 class="header">EMAIL</h3>
+              <h2 id="email">Email</h2>
+            </div>
+            <button class="edit" id="bottomEDIT">EDIT</button>
+          </div>
+        </div>
+      </div>
+      <h1 id="close">X</h1>
+    </div>
+
+    <div class="editor">
+      <form>
+        <h1 id="title">Title</h1>
+        <input type="text" id="firstInput" placeholder="placeholder" />
+        <input type="password" id="psw" placeholder="placeholder" />
+        <div class="formSubmitters">
+          <button id="canceler">Cancel</button>
+          <input type="submit" value="Done" id="done" />
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="module" src="./system/lib/firebase.js"></script>
+    <script type="module" src="./system/lib/index.js"></script>
+  </body>
+</html>

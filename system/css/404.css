@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Share+Tech+Mono&family=VT323&family=Ysabeau+SC:wght@300&display=swap');
+
+:root {
+  --mainBlue: rgb(8, 144, 217);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Share Tech Mono';
+  text-align: center;
+  border: 0;
+  text-decoration: none;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  text-shadow: 2px 2px 2px white;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+a {
+	font-family: 'VT323';
+	font-size: 4rem;
+  cursor: pointer;
+}
+
