@@ -10,6 +10,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 export const db = firebase.database();
+export const masterDB = firebase.database().ref('/');
 export const auth = firebase.auth();
 export const storage = firebase.storage();
 

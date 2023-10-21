@@ -12,6 +12,8 @@
 }
 
 
+
+
 :root {
   --mainBlue: rgb(8, 144, 217);
 }
@@ -28,9 +30,6 @@
   color: black;
 }
 
-body {
-  background-color: var(--mainBlue);
-}
 
 nav {
   display: flex;
@@ -89,16 +88,8 @@ button {
   text-decoration: underline;
 }
 
-table {
-  position: relative;
-  margin: 10px 32%;
-  font-size: 20px;
-  padding: 8px;
-  border: 2px solid black;
-}
-
-th {
-  padding: 10px;
+.compete p {
+  font-size: larger;
 }
 
 .register {
@@ -116,6 +107,7 @@ footer {
   top: 10%;
   background-color: white;
   padding: 3%;
+  border-top: 3px solid black;
 }
 
 footer h3 {
@@ -148,4 +140,229 @@ img {
 
 #signOut {
   display: none;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  width: 70%;
+  height: 80%;
+  background-color: grey;
+  padding: 20px;
+  box-shadow: 5px 3px 6px black;
+  display: none;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left{
+  width: 30%;
+  height: 368px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(63, 63, 63);
+}
+
+.right {
+  width: 70%;
+  height: 368px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(63, 63, 63);
+  align-items: center;
+  border-left: 3px solid black;
+}
+
+.section {
+  display: flex;
+}
+
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  top: 25%;
+}
+
+.info { 
+  width: 40%;
+}
+
+
+#topEDIT {
+  position: absolute;
+  left: 87%;
+  top: 23%;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+}
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  top: 42%;
+}
+
+
+#middleEDIT {
+  position: absolute;
+  left: 87%;
+  top: 39%;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  top: 60%;
+}
+
+
+#bottomEDIT {
+  position: absolute;
+  left: 87%;
+  top: 57.5%;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+}
+
+.edit {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  opacity: 100;
+}
+
+#leftEDIT {
+  position: relative;
+  top: 25%;
+}
+
+
+.left img {
+  position: absolute;
+  top: 25%;
+  width: 100px;
+  height: 100px;
+}
+
+.left h2 {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+}
+
+.header {
+  color: grey;
+}
+
+#email, #username, #displayName , #displayName1 {
+  color: white;
+}
+
+.editor {
+  position: absolute;
+  top: 10%;
+  background-color: grey;
+  left: 35%;
+  width: 30%;
+  height: min-content;
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 3px 2px 3px black;
+  border: 2px solid black;
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 2px;
+  transition: 1s all linear;
+  text-align: left;
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 30%;
+  margin: 0;
+}
+
+#canceler {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: 0;
+  width: 30%;
+  margin: 0;
+}
+
+.formSubmitters {
+  position: relative;
+  right: 10%;
+}
+
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+#close {
+  position: absolute;
+  top: 3%;
+  left: 95%;
+  color: white;
+}
+
+#close:hover {
+cursor: pointer;
+}
+
+.alert {
+  background-color: rgb(219, 11, 11);
+  padding: 10px;
+}
+
+#emailVerify {
+  text-decoration: underline;
+}
+
+#emailVerify:hover {
+  cursor: pointer;
 }
