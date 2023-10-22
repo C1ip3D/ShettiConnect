@@ -27,7 +27,7 @@ const username = document.getElementById('username');
 const NAVimg = document.getElementById('pfp');
 const close = document.getElementById('close');
 const emailVerifyBTN = document.getElementById('emailVerify');
-const emailAlert = document.getElementsByClassName('alert')[0]
+const emailAlert = document.getElementsByClassName('alert')[0];
 
 close.addEventListener('click', () => {
   settings.style.display = 'none';
@@ -112,15 +112,23 @@ emailEDIT.addEventListener('click', () => {
 });
 
 emailVerifyBTN.addEventListener('click', () => {
-  auth.currentUser
-    .sendEmailVerification()
-    .then(() => {
-      return;
-    })
-    .catch((error) => {
-      alert('Error');
-      console.error(error);
-    });
+  let lastVerification = 0;
+  const now = Date.now();
+  if (now - lastVerification < 3600000) {
+    alert('Please wait before asking another verification');
+  } else {
+    auth.currentUser
+      .sendEmailVerification()
+      .then(() => {
+        alert('Email Sent');
+        window.location.reload()
+      })
+      .catch((error) => {
+        alert('Error');
+        console.error(error);
+      });
+      lastVerification = now;
+  }
 });
 
 pfpEDIT.addEventListener('click', () => {
@@ -217,7 +225,7 @@ auth.onAuthStateChanged((user) => {
     NAVimg.src = user.photoURL;
     username.textContent = 'fhsdfsdlj';
     username.textContent = '•'.repeat(username.textContent.length);
-    if(auth.currentUser.emailVerified){
+    if (auth.currentUser.emailVerified) {
       emailAlert.style.display = 'none';
     } else {
       emailAlert.style.display = 'block';
