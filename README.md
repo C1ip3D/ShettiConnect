@@ -1,2 +1,2 @@
-# NightHacksSubmission
+# ShettiConnect
  Shetti Connect 
