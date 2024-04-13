@@ -5,7 +5,7 @@ const dummyPassword = '123456';
 
 auth.onAuthStateChanged((user) => {
   if (user) {
-    window.location.href = '/index.html';
+    window.location.href = './dir/main.html';
   }
 });
 

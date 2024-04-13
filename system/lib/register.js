@@ -9,24 +9,6 @@ fileInput.addEventListener('change', (e) => {
   img.src = URL.createObjectURL(e.target.files[0]);
 });
 
-email.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' || e.key === 'Tab') {
-    password.focus();
-  }
-});
-
-password.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' || e.key === 'Tab') {
-    confirmPassword.focus();
-  }
-});
-
-confirmPassword.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    form.submit();
-  }
-});
-
 auth.onAuthStateChanged((user) => {
   if (user) {
     setTimeout(() => {
@@ -72,7 +54,9 @@ form.addEventListener('submit', (e) => {
                     .updateProfile({
                       displayName: name.value,
                     })
-                    .then(() => {})
+                    .then(() => {
+                      window.location.href = './dir/main.html';
+                    })
                     .catch((error) => {
                       console.error(error);
                       alert(error.message);

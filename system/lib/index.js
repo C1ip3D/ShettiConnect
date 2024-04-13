@@ -182,11 +182,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 registerBTN.addEventListener('click', () => {
-  window.location.href = '/dir/register.html';
+  window.location.href = './dir/register.html';
 });
 
 loginBTN.addEventListener('click', () => {
-  window.location.href = '/dir/login.html';
+  window.location.href = './dir/login.html';
 });
 
 settingsBTN.addEventListener('click', () => {
@@ -198,15 +198,15 @@ logOutBTN.addEventListener('click', () => {
 });
 
 pp.addEventListener('click', () => {
-  window.location.href = '/dir/404.html';
+  window.location.href = './dir/404.html';
 });
 
 tos.addEventListener('click', () => {
-  window.location.href = '/dir/404.html';
+  window.location.href = './dir/404.html';
 });
 
 connect.addEventListener('click', () => {
-  window.location.href = '/dir/main.html';
+  window.location.href = './dir/main.html';
 });
 
 auth.onAuthStateChanged((user) => {
